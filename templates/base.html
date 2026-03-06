@@ -30,7 +30,7 @@
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           {% for i in categories %}
-          <a class="p-2 text-muted" href="#">{{i.category_name}}</a>
+          <a class="p-2 text-muted" href="{% url 'post_by_category' i.id%}" >{{i.category_name}}</a>
           {% endfor %}
         </nav>
       </div> 
