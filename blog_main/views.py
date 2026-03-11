@@ -20,5 +20,7 @@ def home(request):
         'about': about,  
     }
     return render(request, 'home.html', contex)  
+
+
     
 
